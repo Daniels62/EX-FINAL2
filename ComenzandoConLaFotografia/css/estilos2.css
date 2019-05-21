@@ -16,7 +16,7 @@
     }
     
     .container {
-        width: 100%;
+        width: 75%;
         margin: 0 auto;
     }
     
@@ -55,6 +55,78 @@
     
     .navigation ul li a {
         color: white;
+    }
+    /*foto principal*/
+    
+    .container1 {
+        background-color: #82c3a6;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+        padding-bottom: 1.5%;
+        transform: translateY(-18px)
+    }
+    
+    .container1 img {
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    .indent {
+        margin-bottom: 3px;
+        margin-left: 48%;
+    }
+    /*foto secundaria*/
+    
+    .container2 {
+        display: flex;
+        background-color: #d5c75f;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        border: 1px solid white;
+        transform: translateY(-35px)
+    }
+    
+    article .img1 {
+        width: 40%;
+        padding-left: 5%;
+        padding-bottom: 3%;
+        padding-top: 2.5%;
+    }
+    
+    article .img2 {
+        width: 40%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+        padding-top: 2.5%;
+    }
+    /*Centrar enlaces bajo las img */
+    
+    .container3 {
+        display: flex;
+        width: 75%;
+        background-color: #d5c75f;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(-80px)
+    }
+    
+    .container3 div a {
+        color: white;
+    }
+    
+    .pais {
+        width: 100px;
+        margin-left: 20%;
+    }
+    
+    .retra {
+        width: 100px;
+        margin-right: 20%;
     }
     
     @media screen and (max-width: 900px) {
