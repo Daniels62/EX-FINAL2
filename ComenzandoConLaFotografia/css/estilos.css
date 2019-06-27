@@ -88,6 +88,16 @@
         background-color: #d5c75f;
         text-align: center;
     }
+    
+    .pais {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .chic {
+        color: black;
+        text-decoration: none;
+    }
     /* a esta clase le agregue las propiedades flex para centrar y colocar en columna las imagenes secundarias y los enlaces debajo*/
     
     .secund div {
@@ -99,13 +109,27 @@
     /* a las clases  de paisajes y chicos les quite los padding y margin */
     
     .paisaje {
-        width: 85%;
+        width: 80%;
         height: 400px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        transition: 2s;
+    }
+    
+    .paisaje:hover {
+        transform: rotate(15deg)
     }
     
     .chicos {
-        width: 85%;
+        width: 80%;
         height: 400px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        transition: 2s;
+    }
+    
+    .chicos:hover {
+        transform: translate(50px)
     }
     
     @media screen and (max-width:780px) {
