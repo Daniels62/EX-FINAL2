@@ -1,167 +1,243 @@
-    @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-    * {
-        font-family: "dancing script";
-    }
-    
-    body {
-        background-color: #02010a;
-    }
-    /* header */
-    
-    .contenedor {
-        width: 900px;
-        margin: 0 auto;
-    }
-    
-    .cabecera {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        background-color: #5b7989;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin: auto;
-        text-align: center;
-    }
-    
-    .logo {
-        margin: auto;
-        margin: 15px;
-        font-size: 30px;
-        float: left;
-        color: #ffffff;
-        text-shadow: 2px 2px #02010a;
-        font-weight: bold;
-        font-family: 'dancing script';
-    }
-    
-    .menu {
-        margin: auto;
-        margin-top: 12px;
-        margin-left: 25%;
-    }
-    
-    a {
-        color: #fff;
-    }
-    
-    .dec {
-        text-decoration: none;
-    }
-    
-    ul {
-        list-style-type: none;
-    }
-    
-    ul li {
-        display: inline;
-        margin-left: 2em;
-    }
-    /*foto central*/
-    
-    .central {
-        margin: 0 auto;
-        flex-direction: column;
-    }
-    
-    .central {
-        display: flex;
-        background-color: #82c3a6;
-        text-align: center;
-    }
-    
-    .img1 {
-        width: 70%;
-        margin: 2% auto;
-    }
-    /*foto secundaria*/
-    
-    .secund {
-        margin: 0 auto;
-        flex-direction: row;
-    }
-    
-    .secund {
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        background-color: #d5c75f;
-        text-align: center;
-    }
-    
-    .pais {
-        color: black;
-        text-decoration: none;
-    }
-    
-    .chic {
-        color: black;
-        text-decoration: none;
-    }
-    /* a esta clase le agregue las propiedades flex para centrar y colocar en columna las imagenes secundarias y los enlaces debajo*/
-    
-    .secund div {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    /* a las clases  de paisajes y chicos les quite los padding y margin */
-    
-    .paisaje {
-        width: 80%;
-        height: 400px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        transition: 2s;
-    }
-    
-    .paisaje:hover {
-        transform: rotate(15deg)
-    }
-    
-    .chicos {
-        width: 80%;
-        height: 400px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        transition: 2s;
-    }
-    
-    .chicos:hover {
-        transform: translate(50px)
-    }
-    
-    @media screen and (max-width:780px) {
-        /*Contenido*/
-        .contenedor {
-            width: 100%;
-        }
-        /*Header*/
-        .cabecera {
-            flex-direction: column;
-        }
-        .logo {
-            text-align: center;
-            width: 100%;
-        }
-        /*a esta clase le agregue el margin 0 para se centre por completo el menu en modo movil*/
-        .menu {
-            text-align: center;
-            width: 100%;
-            margin: 0% !important;
-        }
-        /*agregue este estilo debido a que las etiquetas ul tienen un padding aplicado por defecto y con esto lo quito para que en movil se centre mejor*/
-        .menu ul {
-            padding: 0;
-        }
-        /*Agregue este estilo para colocar*/
-        .secund {
-            flex-direction: column;
-        }
-    }
-    /*principal*/
-    
-    .main {
-        flex-direction: column;
-    }
+ @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+ * {
+     font-family: "dancing script";
+ }
+ 
+ body {
+     background-color: #02010a;
+ }
+ /* HEADER */
+ 
+ .contenedor {
+     width: 900px;
+     margin: 0 auto;
+ }
+ 
+ .cabecera {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     background-color: #5b7989;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     margin: auto;
+     text-align: center;
+ }
+ 
+ .logo {
+     margin: auto;
+     margin: 15px;
+     font-size: 30px;
+     float: left;
+     color: #ffffff;
+     text-shadow: 2px 2px #02010a;
+     font-weight: bold;
+     font-family: 'dancing script';
+ }
+ 
+ .menu {
+     margin: auto;
+     margin-top: 12px;
+     margin-left: 25%;
+ }
+ 
+ a {
+     color: #fff;
+ }
+ 
+ .dec {
+     text-decoration: none;
+ }
+ 
+ ul {
+     list-style-type: none;
+ }
+ 
+ ul li {
+     display: inline;
+     margin-left: 2em;
+ }
+ /*foto central*/
+ 
+ .central {
+     margin: 0 auto;
+     flex-direction: column;
+ }
+ 
+ .central {
+     display: flex;
+     background-color: #82c3a6;
+     text-align: center;
+ }
+ 
+ .img1 {
+     width: 70%;
+     margin: 2% auto;
+ }
+ /*foto secundaria*/
+ 
+ .secund {
+     margin: 0 auto;
+     flex-direction: row;
+ }
+ 
+ .secund {
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     background-color: #d5c75f;
+     text-align: center;
+ }
+ 
+ .pais {
+     color: black;
+     text-decoration: none;
+     font-size: 20px;
+ }
+ 
+ .chic {
+     color: black;
+     text-decoration: none;
+     font-size: 20px;
+ }
+ /* a esta clase le agregue las propiedades flex para centrar y colocar en columna las imagenes secundarias y los enlaces debajo*/
+ 
+ .secund div {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ /* a las clases  de paisajes y chicos les quite los padding y margin */
+ 
+ .paisaje {
+     width: 80%;
+     height: 400px;
+     margin-top: 10%;
+     margin-bottom: 10%;
+     transition: 2s;
+ }
+ 
+ .paisaje:hover {
+     transform: rotate(15deg)
+ }
+ 
+ .chicos {
+     width: 80%;
+     height: 400px;
+     margin-top: 10%;
+     margin-bottom: 10%;
+     transition: 2s;
+ }
+ 
+ .chicos:hover {
+     transform: translate(50px)
+ }
+ /*.........FOOTER.........*/
+ 
+ footer {
+     width: 900px;
+     margin: 0 auto;
+     padding: 40px;
+     box-sizing: border-box;
+     background-color: #C6d5c5;
+ }
+ 
+ .container-body {
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .container-body h1 {
+     font-size: 25px;
+ }
+ /*......COLUMNA 1 .....*/
+ 
+ .row {
+     display: flex;
+ }
+ 
+ .row img {
+     width: 30px;
+     height: 30px;
+ }
+ 
+ .row label {
+     margin-left: 10px;
+     margin-top: 5px;
+     margin-bottom: 15px;
+ }
+ /*......COLUMNA 2 .....*/
+ 
+ .term {
+     margin-top: 15%;
+ }
+ /*......COLUMNA 3 .....*/
+ 
+ .row2 {
+     display: flex;
+ }
+ 
+ .row2 img {
+     width: 30px;
+     height: 30px;
+ }
+ 
+ .row2 label {
+     margin-left: 10px;
+     margin-top: 5px;
+     margin-bottom: 15px;
+ }
+ /*......COLUMNA 4 .....*/
+ 
+ .row3 {
+     display: flex;
+ }
+ 
+ .row3 label {
+     margin-top: 5px;
+ }
+ 
+ @media screen and (max-width:900px) {
+     /*Contenido*/
+     .contenedor {
+         width: 100%;
+     }
+     /*Header*/
+     .cabecera {
+         flex-direction: column;
+     }
+     .logo {
+         text-align: center;
+         width: 100%;
+     }
+     /*a esta clase le agregue el margin 0 para se centre por completo el menu en modo movil*/
+     .menu {
+         text-align: center;
+         width: 100%;
+         margin-left: 0%;
+     }
+     /*agregue este estilo debido a que las etiquetas ul tienen un padding aplicado por defecto y con esto lo quito para que en movil se centre mejor*/
+     .menu ul {
+         padding: 0;
+     }
+     /*Agregue este estilo para colocar*/
+     .secund {
+         flex-direction: column;
+     }
+     /*principal*/
+     .main {
+         flex-direction: column;
+     }
+     /*.....FOOTER.....*/
+     footer {
+         width: 100%;
+     }
+     .container-body {
+         flex-direction: column;
+         margin-top: -50px;
+     }
+     .term {
+         margin-top: 0px;
+     }
+ }

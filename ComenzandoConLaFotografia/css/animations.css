@@ -1,43 +1,31 @@
-.slideUp {
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible !important;
-}
-
-@keyframes slideUp {
-    0% {
-        transform: translateY(100%);
+    .slideUp {
+        animation-name: slidein;
+        -webkit-animation-name: slidein;
+        animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        visibility: visible !important;
     }
-    50% {
-        transform: translateY(-8%);
+    
+    @keyframes slidein {
+        0% {
+            transform: translateY(150%);
+        }
+        60% {
+            transform: translateY(-5%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
     }
-    65% {
-        transform: translateY(4%);
+    
+    @-webkit-keyframes slidein {
+        0% {
+            transform: translateY(150%);
+        }
+        60% {
+            transform: translateY(-5%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
     }
-    85% {
-        transform: translateY(2%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-@-webkit-keyframes slideUp {
-    0% {
-        -webkit-transform: translateY(100%);
-    }
-    50% {
-        -webkit-transform: translateY(-8%);
-    }
-    65% {
-        -webkit-transform: translateY(4%);
-    }
-    85% {
-        -webkit-transform: translateY(2%);
-    }
-    100% {
-        -webkit-transform: translateY(0%);
-    }
-}
