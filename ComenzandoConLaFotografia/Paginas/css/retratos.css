@@ -138,6 +138,8 @@ footer {
     padding: 40px;
     box-sizing: border-box;
     background-color: #C6d5c5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .container-body {
