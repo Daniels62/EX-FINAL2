@@ -232,7 +232,7 @@ footer {
     }
     .superior,
     .inferior {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     /*.....FOOTER.....*/
     footer {
